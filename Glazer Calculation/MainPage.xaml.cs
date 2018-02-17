@@ -37,10 +37,10 @@ namespace Glazer_Calculation
         {
             //after validation
             //if true 
-            double w = Convert.ToDouble(txtbWeight.Text);
+            double w = Convert.ToDouble(txtbWidth.Text);
             double h = Convert.ToDouble(txtbHeight.Text);
 
-            lblWeight.Text = txtbWeight.Text;
+            lblWidth.Text = txtbWidth.Text;
             lblHeight.Text = txtbHeight.Text;
             lblTintColor.Text = cbboxTintColor.SelectedValue.ToString();
             lblQuantity.Text = txtQuantity.Text;
@@ -49,15 +49,15 @@ namespace Glazer_Calculation
             lblOrderDate.Text = DateTime.Now.ToString("MM/dd/yyyy");
         }
 
-        private void Weight_Changed(object sender, KeyRoutedEventArgs e)
+        private void Width_Changed(object sender, KeyRoutedEventArgs e)
         {
            /*
             if (e.Key < Windows.System.VirtualKey.Number1 || 
                 e.Key > Windows.System.VirtualKey.Number5)
             {
-                txtbWeight.IsTapEnabled = true;
-                txtbWeight.IsHitTestVisible = true;
-                 txtbWeight.Focus(FocusState.Programmatic);
+                txtbWidth.IsTapEnabled = true;
+                txtbWidth.IsHitTestVisible = true;
+                 txtbWidth.Focus(FocusState.Programmatic);
             }
             */
             
@@ -73,6 +73,9 @@ namespace Glazer_Calculation
             color.Add("Blue");
         }
 
+        private void Width_Changed(object sender, TextChangedEventArgs e)
+        {
 
+        }
     }
 }
